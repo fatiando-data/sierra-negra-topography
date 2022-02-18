@@ -1,4 +1,4 @@
-name: fatiando-data-CHANGEME
+name: fatiando-data-sierra-negra-topography
 channels:
   - conda-forge
   - defaults
@@ -9,13 +9,15 @@ dependencies:
   - jupyterlab
   - matplotlib
   - xarray
-  - netcdf4
   - pyproj
+  # for LIDAR data
+  - laspy
+  - laszip # the C lib
+  - pip:
+    - laszip # the Python bindinds
   # PyGMT for plotting
   - pygmt==0.4.1
   - gmt==6.2.0
   # Fatiando
   - pooch>=1.0
-  - harmonica==0.4.*
   - verde==1.6.1
-  - boule==0.3.*

@@ -1,39 +1,41 @@
-<!--
-This is a template for datasets in the Fatiando a Terra collection.
+# Sierra Negra volcano, Ecuador - Topography
 
-When adding a new dataset, fill out the information below. Search for all
-instances of "CHANGEME" and replace with the relevant information.
+This is a topography point cloud of the 2018 lava flows of the Sierra Negra
+volcano, located on the Galápagos islands, Ecuador.
+The data are generated using structure from motion (SFM) and shows nice
+topographic features and different roughness of the lava flows.
+Good to show examples of calculating slope and other terrain properties from
+the point cloud or gridded data.
 
-You probably also want to edit the conda environment.yml file to give the
-environment a new name and add/remove dependencies.
-
-You can delete this comment once done.
--->
-
-# Location - Data type
-
-CHANGEME: A few sentences about the dataset and a plot should go here.
-
-![CHANGEME: The alt text of the image.](preview.jpg)
+![Topographic height of the lava flows on the flank of the volcano](preview.jpg)
 
 | | Summary |
 |--:|:--|
-| File | `CHANGEME.csv` |
-| Size | CHANGEME Mb |
-| Version | [CHANGEME](https://github.com/fatiando-data/CHANGEME/releases/latest) |
-| DOI | https://doi.org/CHANGEME |
+| File | `sierra-negra-topography.csv` |
+| Size | 8.5 Mb |
+| Version | [v1](https://github.com/fatiando-data/sierra-negra-topography/releases/latest) |
+| DOI | https://doi.org/10.5281/zenodo.6139057 |
 | License | [CC-BY](https://creativecommons.org/licenses/by/4.0/) |
-| MD5 | `md5:CHANGEME` |
-| SHA256 | `sha256:CHANGEME` |
-| Source | CHANGEME: Citation and/or link to original data source |
-| Original license | CHANGEME: License (with link) of the original source |
-| Processing code | [`prepare.ipynb`](https://nbviewer.org/github/fatiando-data/CHANGEME/blob/main/prepare.ipynb) |
+| MD5 | `md5:9f6f64d47d26773e37b154cf964724e3` |
+| SHA256 | `sha256:1c2981dc38af5dbee1e4f73616049c37202e508a91563ca8176b728c3cc6882a` |
+| Source | [Carr, B. (2020). Sierra Negra Volcano (TIR Flight 3): Galápagos, Ecuador, October 22 2018. Distributed by OpenTopography.](https://doi.org/10.5069/G957196P) |
+| Original license | [CC-BY](https://doi.org/10.5069/G957196P) |
+| Processing code | [`prepare.ipynb`](https://nbviewer.org/github/fatiando-data/sierra-negra-topography/blob/main/prepare.ipynb) |
 
 ## Changes made
 
 > These are the changes made to the original dataset.
 
-* CHANGEME: List here changes made to the original data.
+* Data were cropped to smaller region to align with previously published
+  studies of the data and make file sizes under 10 Mb.
+* Coordinates converted from UTM to WGS84 geographic.
+* Export to a compressed CSV for easier loading with Pandas.
+
+## Useful references
+
+Prior use of this dataset:
+
+* [Carr et al. (2021)](https://doi.org/10.1016/j.rse.2021.112581)
 
 ## About this repository
 
